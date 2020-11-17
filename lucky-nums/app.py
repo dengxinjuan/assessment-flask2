@@ -42,3 +42,7 @@ def call_random_num_api():
         return jsonify(
         num = numdata,
         year=yeardata)
+    
+    else:
+        return jsonify(errors=form.errors)
+
